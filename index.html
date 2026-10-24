@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Assignment 5</h1>
+
+    <section class="card">
+      <h2>Part 1 & 2: User Profile</h2>
+      
+      <form id="profileForm">
+        <div class="form-group">
+          <label for="usernameInput">Username:</label>
+          <input type="text" id="usernameInput" placeholder="Enter name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="birthYearInput">Birth Year:</label>
+          <input type="number" id="birthYearInput" placeholder="Enter birth year" required>
+        </div>
+
+        <button type="submit" id="updateBtn">Create / Update Profile</button>
+      </form>
+
+      <div class="profile-display">
+        <h3>Profile Details:</h3>
+        <p><strong>Name:</strong> <span id="displayName">-</span></p>
+        <p><strong>Birth Year:</strong> <span id="displayBirthYear">-</span></p>
+        <p><strong>Is Developer:</strong> <span id="displayIsDev">-</span></p>
+        <p><strong>Calculated Age:</strong> <span id="displayAge">-</span></p>
+        <p><strong>Age in Months:</strong> <span id="displayMonths">-</span></p>
+      </div>
+    </section>
+
+    <!-- Part 3 -->
+    <section class="card">
+      <h2>Part 3: Dynamic Hobbies List</h2>
+      
+      <div class="list-controls">
+        <input type="text" id="hobbyInput" placeholder="Enter new hobby">
+        <button id="addItemBtn" type="button">Add Item</button>
+        <button id="removeItemBtn" type="button" class="btn-danger">Remove Last Item</button>
+      </div>
+
+      <ul id="hobbiesList">
+      </ul>
+
+      <p><strong>Total Hobbies Count:</strong> <span id="hobbiesCount">0</span></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
